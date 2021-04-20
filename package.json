@@ -5,11 +5,20 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "server": "json-server server.json -w -d 750 -p 3333"
   },
   "dependencies": {
+    "date-fns": "^2.21.1",
     "next": "10.1.3",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "sass": "^1.32.11"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.41",
+    "@types/react": "^17.0.3",
+    "json-server": "^0.16.3",
+    "typescript": "^4.2.4"
   }
 }
