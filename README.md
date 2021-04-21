@@ -46,6 +46,9 @@ $ git clone https://github.com/josepholiveira/podcastr.git && cd podcastr
 # Install the dependencies
 $ yarn
 
+# Run the backend fake server
+$ yarn server
+
 # Run the web server
 $ yarn dev
 ```
