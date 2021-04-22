@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "server": "json-server server.json -w -d 750 -p 3333"
+    "server": "json-server db.json -w -d 750 -p 3333"
   },
   "dependencies": {
     "axios": "^0.21.1",
