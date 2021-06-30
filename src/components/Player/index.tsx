@@ -33,15 +33,10 @@ export function Player() {
   const episode = episodeList[currentEpisodeIndex]
 
   useEffect(() => {
-    if (!audioRef.current) {
-      return;
-    }
+    if (!audioRef.current) return;
     
-    if (isPlaying) {
-      audioRef.current.play()
-    } else {
-      audioRef.current.pause()
-    }
+    isPlaying ? audioRef.current.play() : audioRef.current.pause()
+    
   }, [isPlaying])
 
   function setupProgressListener() {
@@ -59,11 +54,8 @@ export function Player() {
   }
 
   function handleEpisodeEnded() {
-    if (hasNext) {
-      playNext()
-    } else {
-      clearPlayerState()
-    }
+    hasNext ? playNext() : clearPlayerState()
+    
   }
 
   return (
